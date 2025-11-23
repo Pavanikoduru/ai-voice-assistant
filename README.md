@@ -30,6 +30,7 @@ pip install -r requirements.txt
 
 6. Run the Backend Server
 uvicorn main:app --reload --port 8000
+
 Backend will run at: http://127.0.0.1:8000
 
 API docs (Swagger UI): http://127.0.0.1:8000/docs
@@ -40,4 +41,5 @@ Open frontend/index.html in a browser.
 Click the Check Balance button to see the balance for account 1001.
 
 Other API endpoints (transactions, transfer) can be tested via Swagger UI or by adding buttons in the frontend.
+
 
