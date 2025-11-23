@@ -16,14 +16,15 @@ cd backend
 3. Create a Python Virtual Environment:
 py -3.13 -m venv venv
 
-4. Activate the Virtual Environment:
+4. If you get a permissions error, run this once:
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+5. Activate the Virtual Environment:
 Windows PowerShell:
 
 powershell:
 .\venv\Scripts\Activate.ps1
-Linux / Mac:
-
-source venv/bin/activate
 
 5. Install Dependencies:
 pip install -r requirements.txt
@@ -41,6 +42,7 @@ Open frontend/index.html in a browser.
 Click the Check Balance button to see the balance for account 1001.
 
 Other API endpoints (transactions, transfer) can be tested via Swagger UI or by adding buttons in the frontend.
+
 
 
 
