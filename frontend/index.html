@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Voice Assistant</title>
+</head>
+<body>
+    <h1>AI Voice Assistant Demo</h1>
+    <button onclick="checkBalance()">Check Balance (Account 1001)</button>
+    <div id="result"></div>
+
+    <script>
+        async function checkBalance() {
+            const res = await fetch("http://127.0.0.1:8000/balance/1001");
+            const data = await res.json();
+            document.getElementById("result").innerText = `Balance: ${data.balance}`;
+        }
+    </script>
+</body>
+</html>
